@@ -15,7 +15,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ ubuntu-latest, ubuntu-22.04 ]
+        os: [ ubuntu-22.04, ubuntu-latest ]
 
     outputs:
       should_release: ${{ steps.whether_release.outputs.should_release }}
